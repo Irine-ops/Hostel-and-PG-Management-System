@@ -18,7 +18,7 @@ This project served as my **Final Year BCA Capstone**. It was successfully defen
 - **Frontend:** React.js
 - **Backend:** Node.js, Express.js
 - **Database:** MySQL (Relational)
-- **Authentication:** JWT (JSON Web Tokens)
+- **Authentication:** localStorage
 
 📊 Database Design
 The system utilizes a structured relational schema to ensure ACID compliance:
