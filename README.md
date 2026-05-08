@@ -2,9 +2,6 @@
 
 A Full-Stack React & MySQL Application for Seamless Accommodation Management
 
-[![Upskilling Streak](https://img.shields.io/badge/Learning%20Streak-318%20Days-orange)](https://github.com/Irine-ops)
-[![Database](https://img.shields.io/badge/Database-MySQL-blue)](https://www.mysql.com/)
-
  🚀 Project Milestone
 This project served as my **Final Year BCA Capstone**. It was successfully defended in the 6th-semester viva with a **100% error-free workflow** demonstration.
 
