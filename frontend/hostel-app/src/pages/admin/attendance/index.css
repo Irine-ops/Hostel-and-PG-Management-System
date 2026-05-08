@@ -1,0 +1,49 @@
+.table-button {
+  padding: 6px 12px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  background-color: blue;
+  color: white;
+}
+
+.table-button:hover:not(:disabled) {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.table-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.attendance-background-container{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../../../../background-image.jpg');
+  background-size: cover;
+  height: 100%;
+  padding: 30px;
+}
+
+.status-badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  display: inline-block;
+}
+
+.present {
+  background-color: #4caf50; /* green */
+}
+
+.absent {
+  background-color: #f44336; /* red */
+}
+
+.not-marked {
+  background-color: #ff9800; /* orange */
+}
+

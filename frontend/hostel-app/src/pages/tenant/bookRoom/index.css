@@ -1,0 +1,164 @@
+.dashboard-background-container{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../../../../background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    padding: 40px;
+}
+
+.booking-container{
+    margin-top: 120px;
+    display: flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.preferences-form{
+    background-color: rgba(0, 0, 0, 0.7); /* Slightly transparent */
+    backdrop-filter: blur(5px);           /* Subtle blur */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Thin white "ghost" border */
+    display:flex;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 40px;
+    border-radius: 18px;
+}
+
+.form-row{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-item{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.button{
+    margin-top: 30px;
+}
+
+.option-item{
+    margin-top: 20px;
+}
+
+.available-rooms{
+    margin-top: 30px; 
+}
+
+.rooms-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #111;
+    color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.rooms-table th,
+.rooms-table td {
+    padding: 12px 16px;
+    text-align: center;
+}
+
+.rooms-table th {
+    background-color: #1f1f1f;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.rooms-table tr {
+    border-bottom: 1px solid #333;
+}
+
+.rooms-table tr:hover {
+    background-color: #222;
+    transition: 0.3s;
+}
+
+.confirm-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirm-box {
+    background: #111;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    width: 300px;
+}
+
+.confirm-buttons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cancel-button {
+    background: #444;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.label {
+    display: block;
+    margin-bottom: 10px; /* Space between label and input */
+    margin-top: 20px;    
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.book-button {
+    width: 100%;
+    background: linear-gradient(135deg, #0047FF 0%, #002db3 100%);
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 12px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0, 71, 255, 0.4);
+    border: 0px;
+    color: white;
+}
+
+.messages-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important ;
+    align-items: center;
+}
+
+.error-message {
+    color: #ff4d4d;;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    margin-top: 10px;
+    display: inline-block;
+    border-left: 3px solid #ff4d4d; /* Adds a "pro" alert look */
+    text-align: center;
+}

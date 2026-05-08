@@ -1,0 +1,22 @@
+.form-label{
+    color: white;
+}
+
+.update-profile-background-container{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../../../../background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 40px;
+}
+
+.form-container{
+    background-color: rgba(0, 0, 0, 0.7); /* Slightly transparent */
+    backdrop-filter: blur(5px);           /* Subtle blur */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Thin white "ghost" border */
+    display:flex;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 40px;
+    border-radius: 18px;
+}

@@ -1,0 +1,15 @@
+.not-found-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 80px;
+}
+
+
+.dashboard-background-container{
+    background-color: black;
+    height: 120vh;
+    padding: 30px;
+}

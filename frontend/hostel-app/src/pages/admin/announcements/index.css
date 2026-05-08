@@ -1,0 +1,22 @@
+.announcement-background-container{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../../../../background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 30px;
+}
+
+.announcement-details-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    color: white;
+}
+
+.form-label-item{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}

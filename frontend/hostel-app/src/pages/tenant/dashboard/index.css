@@ -1,0 +1,96 @@
+.dashboard-background-container{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../../../../background-image.jpg');
+    background-size: cover;
+    min-height: 100%;
+    padding: 30px;
+}
+
+.dashboard-container{
+    display: flex;
+    flex-wrap : wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+}
+
+
+.cards-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 70px;
+}
+
+.card {
+  width: 220px;
+  max-width: 90%;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.button{
+  background-color:blue;
+  color:white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 0px;
+}
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .dashboard {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+}
+
+
+.welcome-text {
+    font-weight: 300; /* Makes it look more elegant */
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Helps it sit "above" the background */
+    color: white;
+}

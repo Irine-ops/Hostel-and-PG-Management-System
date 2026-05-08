@@ -1,0 +1,79 @@
+.room-details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 80px;
+    width: 100%; 
+}
+
+.room-background-container{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) ,url('../../../background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 40px;
+}
+
+.room-details-card {
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    width: 100%;          
+    max-width: 800px;    
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.room-detail {
+    margin: 0; /* Remove top margin, use the gap in .text-container instead */
+    font-size: 1.1rem;
+    font-weight: 400;
+    white-space: nowrap; /* Forces "Room Number : 206" to stay on one line */
+}
+
+.room-detail strong {
+    color: #00d2ff; /* Optional: give labels a slight brand color */
+    margin-right: 10px;
+}
+
+.list-item{
+    margin-left: 30px;
+}
+
+.center-text{
+    text-align: center;
+}
+
+.card-text-and-image-container {
+    display: flex;
+    flex-direction: row; /* Ensure they stay side-by-side */
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px; /* Space between text and image */
+    padding: 20px;
+}
+
+.text-container {
+    flex: 1; /* Takes up available space */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.room-image{
+    width: 130px;
+    max-width: 800px; /* Adjust based on your preference */
+    height: 180px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.room-image:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.6);
+    border-color: #00d2ff; /* Highlight color on hover */
+}

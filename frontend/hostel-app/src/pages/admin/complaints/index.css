@@ -1,0 +1,25 @@
+.buttons-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.complaints-background-container{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../../../../background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    padding: 30px;
+}
+
+.priority-high{
+    background-color: #c62828;
+    color : black;
+}
+
+.priority-medium {
+  background-color: #ef6c00;
+}
+
+.priority-low {
+  background-color: #2e7d32;
+}

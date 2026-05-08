@@ -1,0 +1,36 @@
+.available-rooms-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    height: 100%;
+}
+
+.available-rooms-background-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) ,url('../../../background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 40px;
+}
+
+.table-container {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+
+.congratulations-card{
+    width: 320px;
+    padding: 24px;
+    border-radius: 12px;
+    background: #111;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00;
+}

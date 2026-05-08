@@ -1,0 +1,120 @@
+.payment-background-container{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) ,url('../../../background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    padding: 30px;
+}
+
+.fee-payment-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.payment-container {
+    padding: 20px;
+    color: white;
+}
+
+.payment-card {
+    background-color: rgba(0, 0, 0, 0.7); /* Slightly transparent */
+    backdrop-filter: blur(5px);           /* Subtle blur */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Thin white "ghost" border */
+    padding: 25px;
+    border-radius: 15px;
+    width: 300px;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
+
+.amount {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 10px 0;
+}
+
+.pay-btn {
+    background: linear-gradient(135deg, #0047FF 0%, #002db3 100%);
+    padding: 12px 40px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 30px; /* Rounded pill shape looks more modern for payments */
+    box-shadow: 0 4px 15px rgba(0, 71, 255, 0.4);
+    transition: 0.3s;
+    color: white;
+    border: 0px;
+}
+
+.pay-btn:hover {
+    transform: scale(1.05); /* Slight grow effect */
+    box-shadow: 0 6px 20px rgba(0, 71, 255, 0.6);
+}
+
+
+.message {
+    margin-top: 10px;
+    color: lightgreen;
+}
+
+.history-title {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.history-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+    color: white;
+}
+
+.history-title{
+    color: white;
+}
+
+.history-card {
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent */
+    backdrop-filter: blur(8px);    /* Frosted glass look */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle white edge */
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.paid {
+    color: lightgreen;
+    margin-left: 5px;
+}
+
+.pending {
+    color: red;
+    margin-left: 5px;
+}
+
+.buttons-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.cash-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent */
+    backdrop-filter: blur(8px);    /* Frosted glass look */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle white edge */
+    padding: 30px;
+    border-radius: 13px;
+    gap: 30px;
+}

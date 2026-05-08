@@ -1,0 +1,120 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border-radius:0px;
+}
+
+
+.login-page-background-container{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) ,url('../../../background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    gap : 100px;
+}
+
+.form-item-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.login-form-container{
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); 
+}
+
+.login-image-container {
+  display: flex;
+  justify-content: center; 
+  margin-bottom: 24px;    
+}
+
+.login-button-container{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-button:hover {
+    background-color: #2563eb; 
+    transition: 0.3s;
+}
+
+.title{
+    color: white;
+}
+
+.label{
+    color: white;
+}
+
+.login-button{
+    background-color:blue;
+    color:white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 0px;
+}
+
+.input {
+    width: 280px;         
+    padding: 10px;        
+    border-radius: 5px;
+    border: none;
+    margin-top: 8px;      
+}
+
+.register-text a, .forget-password-link {
+    color: #60a5fa; 
+    text-decoration: none;
+}
+
+.register-text span, 
+.forget-password-text { 
+    color: #4dabf7;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.register-text span:hover {
+    text-decoration: underline;
+}
+
+.error-message{
+  color:red;
+  margin-top:5px;
+}
+
+.register-text{
+    color: white;
+    margin-top: 10px;
+}
+
+.label-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 65px;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+}

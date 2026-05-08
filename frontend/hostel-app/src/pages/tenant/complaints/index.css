@@ -1,0 +1,63 @@
+.dashboard-background-container{
+    background-color: black;
+    min-height: 100%;
+    padding: 30px;
+}
+
+.complaints-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.complaint-form-container{
+    background-color: rgba(0, 0, 0, 0.7); /* Slightly transparent */
+    backdrop-filter: blur(5px);           /* Subtle blur */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Thin white "ghost" border */
+    display:flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    padding: 50px;
+    border-radius: 18px;
+    width: 350px;
+}
+
+.form-label-and-input-item{
+    display:flex;
+    flex-direction: column;
+}
+
+.input-item{
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+.form-button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap : 20px;
+}
+
+.complaint-details-card {
+  background-color: #111;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  margin: auto;
+  text-align: left;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+  margin-top: 30px;
+}
+
+.description{
+    color: white;
+}
+
+

@@ -1,0 +1,10 @@
+.error-message{
+  color:red;
+  margin-top:5px;
+}
+
+.form-label-and-input-item{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
