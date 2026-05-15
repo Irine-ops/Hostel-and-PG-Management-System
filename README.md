@@ -2,8 +2,7 @@
 
 A Full-Stack React & MySQL Application for Seamless Accommodation Management
 
- 
- 🚀 Project Milestone
+  🚀 Project Milestone
  
 This project served as my **Final Year BCA Capstone**. It was successfully defended in the 6th-semester viva with a **100% error-free workflow** demonstration.
 
@@ -14,12 +13,14 @@ This project served as my **Final Year BCA Capstone**. It was successfully defen
 - **Relational Integrity:** Managed complex student-room relationships using MySQL foreign keys.
 - **Responsive UI:** Fully functional React frontend designed for clarity and ease of use.
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 
-- **Frontend:** React.js
-- **Backend:** Node.js, Express.js
-- **Database:** MySQL (Relational)
-- **Authentication:** localStorage
+
+| Frontend | Backend | Database | Tools |
+| :--- | :--- | :--- | :--- |
+| ![React](https://shields.io) | ![Node.js](https://shields.io) | ![MySQL](https://shields.io) | ![Git](https://shields.io) |
+| ![JavaScript](https://shields.io) | ![Express.js](https://shields.io) | ![NPM](https://shields.io) | ![VS Code](https://shields.io) |
+
 
 ### 📐 System Architecture
 
