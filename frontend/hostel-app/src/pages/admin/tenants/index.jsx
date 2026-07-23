@@ -58,7 +58,6 @@ class Tenants extends Component {
 
   render() {
     const {tenants} = this.state
-
     return (
       <div className="dashboard-background-container">
         <AdminHeader />

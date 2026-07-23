@@ -9,8 +9,10 @@ class ForgetPassword extends Component{
         confirmPassword : '',
         errorMessage : '',
         email : '',
+        otp : '',
         showPassword : false,
         showConfirmPassword : false,
+        isOtpVerified : false,
     }
 
     onTogglePassword = () => {
@@ -30,6 +32,12 @@ class ForgetPassword extends Component{
         this.setState({
             email : email,
             errorMessage : '',
+        })
+    }
+
+    onChangeOtp = event => {
+        this.setState({
+            otp : event.target.value,
         })
     }
 
@@ -103,7 +111,7 @@ class ForgetPassword extends Component{
     }
     
     render(){
-        const {password , confirmPassword , errorMessage , email , showPassword , showConfirmPassword} = this.state
+        const {password , confirmPassword ,otp ,errorMessage , email , showPassword , showConfirmPassword , isOtpVerified} = this.state
         return(
             <div>
                 <div className="login-page-background-container">
@@ -114,7 +122,7 @@ class ForgetPassword extends Component{
                                 <label htmlFor="email" className="label">Enter Your Email</label>
                                 <input type="email" value={email} onChange={this.onEmailChange} placeholder="Enter your email here" className="input" id="email" />
                             </div>
-                            <div className="form-item-container">
+                            {isOtpVerified ? ( <div className="form-item-container">
                                 <label htmlFor="password" className="label">Enter Your New Password</label>
                                 <div className="password-field">
                                     <input type={showPassword ? "text" : "password"} value={password} onChange={this.onPasswordChange} placeholder="8 or more characters" className="input" id="password"/>
@@ -122,8 +130,13 @@ class ForgetPassword extends Component{
                                         {showPassword ? "🙈" : "👁️"}
                                     </button>
                                 </div>
-                            </div>
-                             <div className="form-item-container">
+                            </div>) : (
+                                <div className="form-item-container">
+                                    <label htmlFor="otp" className="label">Enter your OTP</label>
+                                    <input type="text" className="input" value={otp} onChange={this.onChangeOtp} />
+                                </div>
+                            )}
+                             {isOtpVerified && <div className="form-item-container">
                                 <label htmlFor="confirm-password" className="label">Confirm Password</label>
                                 <div className="password-field">
                                     <input type={showConfirmPassword ? "text" : "password"} value={confirmPassword} onChange={this.onConfirmPasswordChange} placeholder="Give the same password" className="input" id="confirm-password"/>
@@ -131,9 +144,9 @@ class ForgetPassword extends Component{
                                         {showConfirmPassword ? "🙈" : "👁️"}
                                     </button>
                                 </div>
-                            </div>
+                            </div>}
                             <div className="login-button-container">
-                                <button className="login-button" type="submit">Set New Password</button>
+                                {isOtpVerified ? (<button className="login-button" type="submit">Set New Password</button>): (<button className="login-button">Get the Otp</button>)}
                             </div>
                             <p className="register-text">Have an Account ? <Link to="/">Login Here</Link></p>
                             <p className="register-text">Don't have an account ? <Link to="/register">Register Here</Link></p>
